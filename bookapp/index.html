@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app='bookApp'>
+
+<head>
+    <title>Love to read</title>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+	<ul>
+	  <li><a href="/#/Home">Home</a></li>
+	  <li><a href="/#/To Read">To Read</a></li>
+	  <li><a href="/#/Have Read">Have Read</a></li>
+	  <li><a href="/#/Top 10 Overall">Top 10</a><li>
+	</ul>
+
+	<ng-view></ng-view>
+
+	<!-- SCRIPT FILES -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+	<script src="https://code.angularjs.org/1.4.3/angular-route.js"></script>
+	<script src="app.js"></script>
+	<script src= "Controllers/homeCtrl.js"></script>
+	<script src= "Controllers/toReadCtrl.js"></script>
+	<script src= "Services/homeService.js"></script>
+	<script src= "Services/toReadService.js"></script>
+
+</body>
+</html>
