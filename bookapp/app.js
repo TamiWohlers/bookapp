@@ -16,6 +16,14 @@ var app = angular.module('bookApp', ['ngRoute']);
                     // 	  return teamService.getTeamData($route.current.params.team);
                     //   }
             })
+            .when('/haveRead', {
+                templateUrl: 'Views/haveReadView.html',
+                controller: 'haveReadCtrl'
+            })
+            .when('/top10', {
+                templateUrl: 'Views/top10View.html',
+                controller: 'top10Ctrl'
+            })
             .otherwise({
                 redirectTo: '/home'
             })
