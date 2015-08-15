@@ -26,10 +26,10 @@ li {
 
 a:link, a:visited {
     display: block;
-    width: 240px;
+    width: 270px;
     font-weight: bold;
     color: #3333333;
-    background-color: ##CCFFFF
+    background-color:#66FFFF
 ;
     text-align: center;
     padding: 4px;
@@ -38,7 +38,7 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-    background-color: #7A991A;
+    background-color: #33CC33;
 }
 
 .rating{

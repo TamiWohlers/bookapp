@@ -5,6 +5,10 @@ app.controller('homeCtrl', function($scope, homeService) {
     $scope.currentFaves = homeService.currentFaves;
     $scope.rateFunction = function(rating) {
     	console.log('at homeCtrl');
+    }
+    $scope.deleteBook = function(title){
+    	homeService.deleteBook(title);
+    }
         // var _url = 'https:/Services/homeService';
 
         // var data = {
@@ -21,6 +25,5 @@ app.controller('homeCtrl', function($scope, homeService) {
         //         error(data);
         //     });
 
-    };
+    });
 
-});
